@@ -95,7 +95,7 @@ a{
 .offices-details {
 	background-color: grey;
 	display: none;
-	height: 400px;
+	height: 420px;
     width: 100%;
     clear: both;
 }
@@ -126,6 +126,14 @@ a{
 	text-decoration: none;
 }
 
+.offices-details:not(:target) {
+	display:none;
+    background-color: #DCDCDC;
+	border: solid #808080 1px;
+	box-sizing: border-box;
+	padding: 20px 60px;
+}
+
 .offices-details:target{
     display:block;
     background-color: #DCDCDC;
@@ -148,7 +156,7 @@ a{
 	position: relative;
 	float: left;
 	border-right: solid #808080 1px;
-	padding: 0 30px;
+	padding: 0 60px;
 	height: 250px;
 }
 
