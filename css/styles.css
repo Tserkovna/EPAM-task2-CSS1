@@ -1,0 +1,166 @@
+.logo {
+	color:  #39C2D7;
+	font-family: 'Source Sans Pro', sans-serif ,helvetica ,arial;
+	text-decoration: none;
+}
+
+.logo i {
+	font-style: normal;
+	color: #464547;
+}
+
+
+
+.countries-item {
+	display: inline-block;
+	width: 24%;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	/*It isn't responsive!*/
+	margin: 8px;
+}
+
+.countries-item:nth-of-type(4)  {
+	float: right;
+	margin-right: 0;
+}
+
+.countries-item:nth-of-type(1)  {
+	margin-left: 0;
+}
+
+.country-image {
+	height: 100%;
+}
+
+.country-information {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 120%;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	text-align: center;
+    max-height: 60px;
+    -webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+}
+
+.countries-item:hover > .country-information {
+	max-height: 120%;
+
+}
+
+
+
+.countries-item:nth-of-type(1) .country-information{
+	left: 0;
+}
+
+
+#m1:target{
+    background-color: green;
+}
+.target {
+    width:50%;
+    height:200px;
+    border:solid black 1px; 
+}
+.target > div {
+    display:none;
+}
+
+.target > div:target{
+    display:block;
+}
+#a,#b{
+	background-color: yellow;
+	height: 200px;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+.country-cities-detail-href {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.offices-details {
+	background-color: grey;
+	display: none;
+	height: 200px;
+    width: 100%;
+    clear: both;
+}
+
+
+.offices-details:target{
+    display:block;
+    background-color: black;
+}
+
+.country-cities-count {
+	padding-top: 120px;
+	text-align: center;
+	font-size: 100px;
+	margin: 0;
+	position: relative;
+}
+
+.country-cities {
+	margin: 0;
+	text-align: center;
+	font-size: 25px;
+}
+
+.target {
+    width:50%;
+    height:200px;
+    border:solid black 1px; 
+}
+.kk{
+    background-color: grey;
+}
+
+.kk:target{
+    display:block;
+    background-color: black;
+}
+
+
+.sibling-hover:hover ~ #a {
+    background-color: red;
+    color: white;
+}
+
+.sibling-hover:target ~ #a {
+  background-color: blue;
+}
+.at {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
+
+.at:target {
+	font-size: 60px;
+	background-color: green;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+border-left-color: red;
+  border-bottom: 10px solid black;
+  margin-top: -30px;
+}
