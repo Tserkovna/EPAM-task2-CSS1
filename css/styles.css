@@ -9,8 +9,6 @@
 	color: #464547;
 }
 
-
-
 .countries-item {
 	display: inline-block;
 	width: 24%;
@@ -19,7 +17,7 @@
 	position: relative;
 	float: left;
 	/*It isn't responsive!*/
-	margin: 8px;
+	margin:20px 8px;
 }
 
 .countries-item:nth-of-type(4)  {
@@ -30,6 +28,7 @@
 .countries-item:nth-of-type(1)  {
 	margin-left: 0;
 }
+
 
 .country-image {
 	height: 100%;
@@ -67,7 +66,7 @@
 }
 .target {
     width:50%;
-    height:200px;
+  
     border:solid black 1px; 
 }
 .target > div {
@@ -96,15 +95,43 @@ a{
 .offices-details {
 	background-color: grey;
 	display: none;
-	height: 200px;
+	height: 400px;
     width: 100%;
     clear: both;
 }
 
+#details-country-name {
+	color: #39C2D7;
+}
+
+.details-office-map {
+	color: 	#556B2F;
+	font-weight: bold;
+}
+
+.details-office-map:hover {
+	text-decoration: underline;
+}
+
+.details-office-phone-number {
+	color: #464547;
+}
+
+.details-office-phone-number em {
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.details-office-phone-number em:hover {
+	text-decoration: none;
+}
 
 .offices-details:target{
     display:block;
-    background-color: black;
+    background-color: #DCDCDC;
+	border: solid #808080 1px;
+	box-sizing: border-box;
+	padding: 20px 60px;
 }
 
 .country-cities-count {
@@ -113,6 +140,33 @@ a{
 	font-size: 100px;
 	margin: 0;
 	position: relative;
+}
+
+.details-city-office {
+	display: inline-block;
+	width: 15%;
+	position: relative;
+	float: left;
+	border-right: solid #808080 1px;
+	padding: 0 30px;
+	height: 250px;
+}
+
+.details-city-office:nth-of-type(1) {
+	padding-left: 0;
+}
+
+.details-city-office:last-child {
+	border-right: none;
+}
+
+.details-city-name {
+	color: #464547;
+	margin-top: 0;
+}
+
+.details-office-information {
+	color: #464547;
 }
 
 .country-cities {
