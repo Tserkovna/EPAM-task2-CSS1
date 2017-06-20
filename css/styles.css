@@ -1,228 +1,220 @@
 .logo {
-	color:  #39C2D7;
-	font-family: 'Source Sans Pro', sans-serif ,helvetica ,arial;
-	text-decoration: none;
+  color:  #39C2D7;
+  font-family: 'Source Sans Pro', sans-serif ,helvetica ,arial;
+  text-decoration: none;
+  font-size: 50pt;
+  transform: scaleY(1.2);
+  font-stretch: ultra-condensed;
 }
 
 .logo i {
-	font-style: normal;
-	color: #464547;
+  font-style: normal;
+  color: #464547;
+  transform: scaleY(1.2);
+  letter-spacing: -2px;
+  font-stretch: ultra-condensed;
+}
+
+#coutries-table {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.coutries-row {
+  margin: 0;
 }
 
 .countries-item {
-	display: inline-block;
-	width: 24%;
-	height: 400px;
-	overflow: hidden;
-	position: relative;
-	float: left;
-	/*It isn't responsive!*/
-	margin:20px 8px;
+  width: 22%;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+  margin:20px 17px;
 }
 
-.countries-item:nth-of-type(4)  {
-	float: right;
-	margin-right: 0;
+.coutries-row .countries-item:first-child {
+  margin-left: 0;
 }
 
-.countries-item:nth-of-type(1)  {
-	margin-left: 0;
+.coutries-row .countries-item:last-child {
+  margin-right: 0;
 }
-
 
 .country-image {
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
+#image-1 {
+  background-image: url("http://intered.com.ua/Media/Default/Content_Images/AboutUkraine/Lavra.jpg");
+  background-size: cover;
+}
+
+#image-2 {
+  background-image: url("http://cdn77.orangesmile.com/common/img_cities_w680/gdansk--501400-2.jpg");
+  background-size: cover;
+}
+
+#image-3 {
+  background-image: url("http://4.bp.blogspot.com/-3cj39aQaTBo/UM8NqP6LIiI/AAAAAAAAACs/lKulN4tex-A/s1600/golden-temple-500.jpg");
+  background-size: cover;
+}
+  
+#image-4 {
+  background-image: url("http://www.condoinvestments.ca/images/11832/TO_2014_Skyline.jpg");
+  background-size: cover;
+}
+
+#image-5 {
+  background-image: url("https://img.rt.com/files/2016.08/original/57bbffacc36188d7198b458b.jpg");
+  background-size: cover;
+}
+
+#image-6 {
+  background-image: url("http://mstecker.com/images/China/Yunnan/ncp1710a.jpg");
+  background-size: cover;
+}
+
+#image-7 {
+  background-image: url("http://d3n8a8pro7vhmx.cloudfront.net/youngfabians/pages/400/meta_images/original/stockholm-night-view-453.jpg?1409820219");
+  background-size: cover;
+}
+  
+#image-8 {
+  background-image: url("http://paradiseintheworld.com/wp-content/uploads/2012/11/new-york-skyline.jpg");
+  background-size: cover;
+}
+
+#image-9 {
+  background-image: url("https://hw.infowars.com/wp-content/uploads/2014/05/190514russia.jpg");
+  background-size: cover;
+}
+
+#image-10 {
+  background-image: url("http://cdn.pymnts.com/wp-content/uploads/2016/08/amsterdam-netherlands-tech-center.jpg");
+  background-size: cover;
+}
+
+#image-11 {
+  background-image: url("http://newmedia.thomson.co.uk/live/vol/2/e96182e2016c448518fa0ac72fc92ae218974c55/1080x608/web/EUROPEMEDITERRANEANIRELANDCON_IRLIRISHCITIESDUBLIN.jpg");
+  background-size: cover;
+}
+  
+#image-12 {
+  background-image: url("http://talentifynow.com/media/2014/10/talentifynow-czech-republic.jpg");
+  background-size: cover;
+}
+    
 .country-information {
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	height: 120%;
-	left: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: #FFF;
-	text-align: center;
-    max-height: 60px;
-    -webkit-transition: max-height 0.8s;
-	-moz-transition: max-height 0.8s;
-	transition: max-height 0.8s;
+  height: 120%;
+  width: 100%;
+  margin-top: -25%;
+  line-height: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  text-align: center;
+  transition: 0.5s;
 }
 
 .countries-item:hover > .country-information {
-	max-height: 120%;
-
-}
-
-
-
-.countries-item:nth-of-type(1) .country-information{
-	left: 0;
-}
-
-
-#m1:target{
-    background-color: green;
-}
-.target {
-    width:50%;
-  
-    border:solid black 1px; 
-}
-.target > div {
-    display:none;
-}
-
-.target > div:target{
-    display:block;
-}
-#a,#b{
-	background-color: yellow;
-	height: 200px;
-}
-a{
-    text-decoration:none;
-    color:black;
-}
-.country-cities-detail-href {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-.offices-details {
-	background-color: grey;
-	display: none;
-	height: 420px;
-    width: 100%;
-    clear: both;
-}
-
-#details-country-name {
-	color: #39C2D7;
-}
-
-.details-office-map {
-	color: 	#556B2F;
-	font-weight: bold;
-}
-
-.details-office-map:hover {
-	text-decoration: underline;
-}
-
-.details-office-phone-number {
-	color: #464547;
-}
-
-.details-office-phone-number em {
-	font-style: normal;
-	text-decoration: underline;
-}
-
-.details-office-phone-number em:hover {
-	text-decoration: none;
-}
-
-.offices-details:not(:target) {
-	display:none;
-    background-color: #DCDCDC;
-	border: solid #808080 1px;
-	box-sizing: border-box;
-	padding: 20px 60px;
-}
-
-.offices-details:target{
-    display:block;
-    background-color: #DCDCDC;
-	border: solid #808080 1px;
-	box-sizing: border-box;
-	padding: 20px 60px;
+  margin-top: -120%;
 }
 
 .country-cities-count {
-	padding-top: 120px;
-	text-align: center;
-	font-size: 100px;
-	margin: 0;
-	position: relative;
-}
-
-.details-city-office {
-	display: inline-block;
-	width: 15%;
-	position: relative;
-	float: left;
-	border-right: solid #808080 1px;
-	padding: 0 60px;
-	height: 250px;
-}
-
-.details-city-office:nth-of-type(1) {
-	padding-left: 0;
-}
-
-.details-city-office:last-child {
-	border-right: none;
-}
-
-.details-city-name {
-	color: #464547;
-	margin-top: 0;
-}
-
-.details-office-information {
-	color: #464547;
+  font-size: 60pt;
+  line-height: 0;
+  padding-top: 15px;
+  margin-bottom: 0;
 }
 
 .country-cities {
-	margin: 0;
-	text-align: center;
-	font-size: 25px;
+  font-size: 16pt;
+  padding-top: 20px;
+  line-height: 0;
 }
 
-.target {
-    width:50%;
-    height:200px;
-    border:solid black 1px; 
-}
-.kk{
-    background-color: grey;
+.country-cities-detail-href {
+  margin: 0 17px;
 }
 
-.kk:target{
-    display:block;
-    background-color: black;
+.offices-details:not(:target) {
+  display:none;
 }
 
-
-.sibling-hover:hover ~ #a {
-    background-color: red;
-    color: white;
+.offices-details:target{
+  display:block;
 }
 
-.sibling-hover:target ~ #a {
-  background-color: blue;
-}
-.at {
-	height: 100px;
-	width: 100px;
-	background-color: red;
-}
-
-.at:target {
-	font-size: 60px;
-	background-color: green;
-}
-
-.arrow-up {
-  width: 0; 
-  height: 0; 
+#triangle-up {
+  width: 0;
+  height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-border-left-color: red;
-  border-bottom: 10px solid black;
-  margin-top: -30px;
+  border-bottom: 20px solid #DCDCDC;
+  margin-top: -20px;
+  margin-left: 310px;
 }
+
+.offices-details {
+  background-color: #DCDCDC;
+  border: solid #808080 1px;
+  padding: 0 30px 30px 30px;
+  margin: 20px 0;
+}
+
+.details-city-office {
+  display: inline-block;
+  width: 20%;
+  border-right: solid #808080 1px;
+  padding: 0 60px;
+}
+
+.details-city-office:nth-of-type(1) {
+  padding-left: 0;
+}
+
+.details-city-office:last-child {
+  border-right: none;
+}
+
+#details-country-name {
+  color: #39C2D7;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.details-office-map {
+  color:  #556B2F;
+  font-weight: bold;
+}
+
+.details-office-map:hover {
+  text-decoration: underline;
+}
+
+.details-office-phone-number {
+  color: #464547;
+}
+
+.details-office-phone-number em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.details-office-phone-number em:hover {
+  text-decoration: none;
+}
+
+.details-close {
+  float: right;
+  text-decoration: none;
+  color: #808080;
+  padding-top: 20px;
+  font-size: 10pt;
+}
+
+
+
+
+
+
